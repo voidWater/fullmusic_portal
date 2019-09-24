@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>简乐艺术中心</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=GQ032eBu4aTGG8lWrZXQR3WvpiV7TuA7"></script>
+
+</head>
+<body>
+<div id="demo" class="carousel slide" data-ride="carousel">
+    <!-- 指示符 -->
+    <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    <!-- 轮播图片 -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://static.runoob.com/images/mix/img_fjords_wide.jpg">
+        </div>
+        <div class="carousel-item">
+            <img src="https://static.runoob.com/images/mix/img_nature_wide.jpg">
+        </div>
+        <div class="carousel-item">
+            <img src="https://static.runoob.com/images/mix/img_mountains_wide.jpg">
+        </div>
+    </div>
+    <!-- 左右切换按钮 -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+</div>
+<div class="jumbotron text-center head-bar">
+    <h1>简乐艺术中心</h1>
+    <p>Jan music arts centre</p>
+</div>
+
+<div >
+    <div class="container">
+        <div class="title-bar">
+            <h1>Get everything you need to pick the right teacher.</h1>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h3 style="text-align: center">快乐学习</h3>
+                <div>Integer sit amet mattis quam, sit amet ultricies velit. Praesent ullamcorper dui turpis.</div>
+            </div>
+            <div class="col">
+                <h3 style="text-align: center">专业教师</h3>
+                <div>Integer sit amet mattis quam, sit amet ultricies velit. Praesent ullamcorper dui turpis.</div>
+            </div>
+            <div class="col">
+                <h3 style="text-align: center">灵活时间</h3>
+                <div>Integer sit amet mattis quam, sit amet ultricies velit. Praesent ullamcorper dui turpis.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="dz" >
+    <div class="container">
+        <div class="row">
+            <div class="col col-sm-24">
+                <h1 >It is our duty to give a good education</h1>
+                <div>You've got to ask yourself one question:″Do I feel lucky?″Well,do ya,punk?</div>
+                <div>Mama always said life was like a box of chocolates. You never know what you're gonna get.</div>
+            </div>
+            <div class="col col-sm-24">
+                <img src="/img/1.jpg" class="img-fluid ">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="dz">
+    <div class="title-bar">
+        <h1>最专业的师资力量</h1>
+    </div>
+    <div class="container detail-bar">
+        <div class="row"></div>
+        <div class="row">
+            <div class="col-md-4 col-12 col-sm-12"><img src="/img/ls_001.jpg" class="img-fluid rounded"></div>
+            <div class="col-md-4 col-12 col-sm-12"><img src="/img/ls_002.jpg" class="img-fluid rounded"></div>
+            <div class="col-md-4 col-12 col-sm-12"><img src="/img/ls_003.jpg" class="img-fluid rounded"></div>
+        </div>
+        <div class="row">&nbsp</div>
+        <div class="row">
+            <div class="col-md-4 col-12 col-sm-12"><img src="/img/ls_004.jpg" class="img-fluid rounded"></div>
+            <div class="col-md-4 col-12 col-sm-12"><img src="/img/ls_005.jpg" class="img-fluid rounded"></div>
+            <div class="col-md-4 col-12 col-sm-12"><img src="/img/ls_006.jpg" class="img-fluid rounded"></div>
+        </div>
+        <div class="row"></div>
+    </div>
+</div>
+<div id="link-me">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-6 col-sm-12" ><img style="height: 200px" src="/img/er.jpg" class="img-fluid"><div>&nbsp</div></div>
+            <div class="col-md-4 col-6 col-sm-12" style="color:white">
+                <h3>联系我们</h3>
+                <p>地址：海口市龙华区金盘金花路41号</p>
+                <p>营业时间：09:00-21:30</p>
+                <p>联系电话：18889520523</p>
+            </div>
+            <div class="col-md-4 col-12 col-sm-12" ><div id="container"></div></div>
+            <div class="col"></div>
+        </div>
+    </div>
+</div>
+<footer id="footer">
+    Copyright©fullmusic.club ICP主体备案号:琼ICP备19002424号
+</footer>
+</body>
+<script type="text/javascript">
+    var map = new BMap.Map("container");
+    map.centerAndZoom(new BMap.Point(110.32980847495868, 19.998628411801107),18);//110.32980185464291, 19.998
+    map.enableScrollWheelZoom(true);
+    var top_left_control = new BMap.ScaleControl({anchor: BMAP_ANCHOR_TOP_LEFT});// 左上角，添加比例尺
+    var top_left_navigation = new BMap.NavigationControl();  //左上角，添加默认缩放平移控件
+    var top_right_navigation = new BMap.NavigationControl({anchor: BMAP_ANCHOR_TOP_RIGHT, type: BMAP_NAVIGATION_CONTROL_SMALL}); //右上角
+    map.addControl(top_left_control);
+    map.addControl(top_left_navigation);
+    map.addControl(top_right_navigation);
+    var marker = new BMap.Marker(new BMap.Point(110.32980847495868, 19.998628411801107)); // 创建点
+    map.addOverlay(marker);    //增加点
+    // function showInfo(e){
+    //     alert(e.point.lng + ", " + e.point.lat);
+    // }
+    map.addEventListener("click", showInfo);
+    //map.addEventListener("tilesloaded",function(){alert("地图加载完毕");});
+
+</script>
+</html>
